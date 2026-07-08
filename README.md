@@ -1,4 +1,7 @@
 # mondaycoffee
+Monday Coffee is a growing retail coffee brand looking to optimize its current sales operations and identify the most profitable cities for future market expansion. This project acts as an end-to-end Business Intelligence solution, transforming raw transactional data into actionable strategic insights.
+By utilizing SQL for complex database querying and Power BI for dynamic data modeling and visualization, this project uncovers hidden sales trends, evaluates geographic rent efficiencies, and delivers targeted recommendations for the company's next franchise locations.
+![Monday Coffee Power BI Dashboard]([])
 ## Objective
 The goal of this project is to analyze the sales data of Monday Coffee, a company that has been selling its products online since January 2023, and to recommend the top three major cities in India for opening new coffee shop locations based on consumer demand and sales performance.
 
@@ -32,7 +35,10 @@ The goal of this project is to analyze the sales data of Monday Coffee, a compan
 
 10. **Market Potential Analysis**  
     Identify top 3 city based on highest sales, return city name, total sale, total rent, total customers, estimated  coffee consumer
-    
+
+## Data Architecture & Star Schema
+The raw dataset consists of over 10,000+ transaction records across 14 distinct cities. The data was modeled using a Star Schema to optimize query performance and enable dynamic filtering in Power BI.
+Fact Table: sales (Transaction records, Revenue, Product IDs, Customer IDs)
 
 ## Recommendations
 After analyzing the data, the recommended top three cities for new store openings are:
@@ -51,3 +57,19 @@ After analyzing the data, the recommended top three cities for new store opening
 1. Highest number of customers, which is 69.  
 2. Average rent per customer is very low at 156.  
 3. Average sales per customer is better at 11.6k.
+## Repository Contents
+Schemas.sql: Data definition scripts establishing primary/foreign key relationships and table structures.
+
+Solutions.sql: Advanced SQL queries answering 10 complex business questions using window functions (LAG, DENSE_RANK), CTEs, and multi-table joins.
+
+Monday_Coffee_Expansion_Analysis.pbix: The interactive Power BI dashboard featuring dynamic date-slicing, DAX measures (Total Revenue, Rent-per-Customer), and cross-filtering visuals.
+
+.csv files: The raw datasets utilized for ingestion (sales.csv, city.csv, customers.csv, products.csv).
+
+## Technical Skills Demonstrated
+
+Database Management: Relational database design, Primary/Foreign Key mapping.
+
+Advanced SQL: Common Table Expressions (CTEs), Window Functions, Time-Series Analysis (EXTRACT), Aggregations.
+
+Business Intelligence: Star Schema data modeling, DAX measure creation (SUM, DISTINCTCOUNT, DIVIDE), Interactive Dashboard Design, KPI tracking.
