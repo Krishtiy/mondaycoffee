@@ -38,7 +38,12 @@ The goal of this project is to analyze the sales data of Monday Coffee, a compan
 
 ## Data Architecture & Star Schema
 The raw dataset consists of over 10,000+ transaction records across 14 distinct cities. The data was modeled using a Star Schema to optimize query performance and enable dynamic filtering in Power BI.
-Fact Table: sales (Transaction records, Revenue, Product IDs, Customer IDs)
+
+* **Fact Table:** `sales` (Transaction records, Revenue, Product IDs, Customer IDs)
+* **Dimension Tables:** 
+  * `city` (Population, Estimated Rent, Geographic Rank)
+  * `customers` (Customer details and location mapping)
+  * `products` (Product catalog and pricing)
 
 ## Recommendations
 After analyzing the data, the recommended top three cities for new store openings are:
@@ -70,6 +75,6 @@ Monday_Coffee_Expansion_Analysis.pbix: The interactive Power BI dashboard featur
 
 Database Management: Relational database design, Primary/Foreign Key mapping.
 
-Advanced SQL: Common Table Expressions (CTEs), Window Functions, Time-Series Analysis (EXTRACT), Aggregations.
+Advanced SQL (MySQL 8.0): Common Table Expressions (CTEs), Window Functions, Time-Series Analysis (YEAR/MONTH/QUARTER), Aggregations.
 
 Business Intelligence: Star Schema data modeling, DAX measure creation (SUM, DISTINCTCOUNT, DIVIDE), Interactive Dashboard Design, KPI tracking.
