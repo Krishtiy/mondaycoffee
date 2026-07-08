@@ -1,7 +1,7 @@
 # mondaycoffee
 Monday Coffee is a growing retail coffee brand looking to optimize its current sales operations and identify the most profitable cities for future market expansion. This project acts as an end-to-end Business Intelligence solution, transforming raw transactional data into actionable strategic insights.
 By utilizing SQL for complex database querying and Power BI for dynamic data modeling and visualization, this project uncovers hidden sales trends, evaluates geographic rent efficiencies, and delivers targeted recommendations for the company's next franchise locations.
-![Monday Coffee Power BI Dashboard](Screenshot 2026-07-09 000139.png)
+![Monday Coffee Power BI Dashboard](dashboard.png)
 ## Objective
 The goal of this project is to analyze the sales data of Monday Coffee, a company that has been selling its products online since January 2023, and to recommend the top three major cities in India for opening new coffee shop locations based on consumer demand and sales performance.
 
